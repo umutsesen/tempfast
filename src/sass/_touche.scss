@@ -1,0 +1,33 @@
+.sizemewidget .sizemewidget__modal__content .modalSteps .ageInformation {
+    &__inputContainer {
+      position: relative;
+      height: 0px !important;
+      @include respond(phone) {
+        height: 11px !important;
+      }
+}}
+
+
+.sizemewidget .sizemewidget__modal__content .sizeandmeButton {
+    background: none;
+    outline: none;
+    border: 2px solid black;
+
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 7px;
+    padding: 0.4rem !important;
+  
+    svg {
+      stroke-width: 0.5px;
+    }
+  
+    @include respond(tab-port) {
+      padding: 0.3rem;
+      font-size: 0.8rem;
+    }
+  }

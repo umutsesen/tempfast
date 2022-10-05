@@ -1,0 +1,60 @@
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: all 2s ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+
+  transition: all 2s ease-out;
+}
+
+@keyframes hintloading {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+// don't forget vendor prefixes
+@-webkit-keyframes hintloading {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

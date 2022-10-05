@@ -1,0 +1,8 @@
+export default {
+  NAME: 'NAME',
+  SURNAME: 'SURNAME',
+  PHONE: 'PHONE',
+  PHOTO: 'PHOTO',
+  EMAIL: 'EMAIL',
+  CHANGE_PASSWORD: 'CHANGE_PASSWORD'
+};

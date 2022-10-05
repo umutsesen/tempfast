@@ -1,0 +1,161 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-small {
+      @media only screen and (max-width: 21.3125em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == phone {
+      @media only screen and (max-width: 37.5em) {
+        @content;
+      } //600px
+    }
+    @if $breakpoint == tab-port-small {
+      @media only screen and (max-width: 45.68em) {
+        @content;
+      } //731px
+    }
+    @if $breakpoint == tab-port {
+      @media only screen and (max-width: 57em) {
+        @content;
+      } //912px
+    }
+    @if $breakpoint == tab-land-small {
+      @media only screen and (max-width: 62.25em) {
+        @content;
+      } //1000px
+    }
+    @if $breakpoint == tab-land-large {
+      @media only screen and (max-width: 65.625em) {
+        @content;
+      } //1200px
+    }
+    @if $breakpoint == small-desktop {
+      @media only screen and (max-width: 82em) {
+        @content;
+      } //1300
+    }
+    @if $breakpoint == haha-desktop {
+      @media only screen and (max-width: 90em) {
+        @content;
+      } //1300
+    }
+    @if $breakpoint == medium-desktop {
+      @media only screen and (max-width: 110em) {
+        @content;
+      } //1500
+    }
+    @if $breakpoint == big-desktop {
+      @media only screen and (min-width: 120em) {
+        @content;
+      } //1800
+    }
+    @if $breakpoint == too-big-desktop {
+      @media only screen and (min-width: 150em) {
+        @content;
+      } //2400
+    }
+  }
+  
+  // css checkbox mixin
+  @mixin css-checkbox(
+    $size: '16px',
+    $selectedColor: #635b95,
+    $checkColor: #fff,
+    $valign: 'middle',
+    $rounded: rounded
+  ) {
+    display: none;
+  
+    &:checked + i {
+      background: #635b95;
+      border-color: #635b95;
+  
+      &:hover:after {
+        opacity: 1;
+      }
+  
+      &:after {
+        opacity: 1;
+        border-color: #{$checkColor};
+      }
+    }
+  
+    + i {
+      box-sizing: border-box;
+      &:before,
+      &:after {
+        box-sizing: border-box;
+      }
+    }
+    + i {
+      box-shadow: 0 0 1rem rgba(#000, 0.1); //addition
+      position: relative;
+      display: inline-block;
+      top: -1px;
+      width: #{$size};
+      height: #{$size};
+      margin: 0;
+      vertical-align: #{$valign};
+      border: 1px solid #999;
+      transition: all 200ms ease;
+  
+      @if $rounded == 'circle' {
+        border-radius: 10em;
+      } @else if $rounded == 'rounded' {
+        border-radius: 0.2em;
+      } @else {
+        border-radius: 0;
+      }
+  
+      background: #f9f9f9;
+      font-size: #{$size};
+      cursor: pointer;
+      margin-right: 0.5rem;
+  
+      &:hover:after {
+        opacity: 0.2;
+      }
+  
+      &:after {
+        content: '';
+        opacity: 0;
+        transform: translateZ(1px) rotate(-45deg);
+        outline: 1px solid transparent; // hack to prevent antialias atrifacts in firefox
+        position: absolute;
+        top: 22%;
+        left: 15%;
+        width: 0.68em;
+        height: 0.4em;
+        border: 0.15em solid #222;
+        border-top: none;
+        border-right: none;
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+  
+  @mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

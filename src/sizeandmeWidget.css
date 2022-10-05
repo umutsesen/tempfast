@@ -1,0 +1,1909 @@
+.sizemewidget * {
+  margin: 0;
+  padding: 0;
+}
+/* .sizemewidget * {
+  all: unset;
+} */
+
+/***************** ANIMATIONS              ************************/
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter {
+  opacity: 0;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit {
+  opacity: 1;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter
+  .sizemeIntroductionProductImage {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeIntroductionProductImage {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit
+  .sizemeIntroductionProductImage {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeIntroductionProductImage {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeIntroductionProductImage,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeIntroductionProductImage {
+  transition: opacity 500ms, transform 500ms;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter
+  .sizemeIntroductionChoices {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeIntroductionChoices {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit
+  .sizemeIntroductionChoices {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeIntroductionChoices {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeIntroductionChoices,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeIntroductionChoices {
+  transition: opacity 500ms, transform 500ms;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter .sizemeAgeInput,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter
+  .selectBodyTypes-mobil,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter .stepTitle,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter .selectBodyTypes {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeAgeInput,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .selectBodyTypes-mobil,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter-active .stepTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .selectBodyTypes {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit .sizemeAgeInput,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit
+  .selectBodyTypes-mobil,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit .stepTitle,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit .selectBodyTypes {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeAgeInput,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .selectBodyTypes-mobil,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit-active .stepTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .selectBodyTypes {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.sizemeFade-enter-active .sizemeAgeInput,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeAgeInput,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeAgeTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .selectBodyTypes-mobil,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .selectBodyTypes-mobil,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-enter-active .stepTitle,
+.sizemewidget .sizemewidget__modal__content .sizemeFade-exit-active .stepTitle,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .selectBodyTypes,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .selectBodyTypes {
+  transition: opacity 500ms, transform 500ms;
+}
+/******************/
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter
+  .sizemeBodySizeProduct {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeBodySizeProduct {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit
+  .sizemeBodySizeProduct {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeBodySizeProduct {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeBodySizeProduct,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeBodySizeProduct {
+  transition: opacity 500ms, transform 500ms;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter
+  .sizemeBodySizeInformationProposal {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeBodySizeInformationProposal {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit
+  .sizemeBodySizeInformationProposal {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeBodySizeInformationProposal {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-enter-active
+  .sizemeBodySizeInformationProposal,
+.sizemewidget
+  .sizemewidget__modal__content
+  .sizemeFade-exit-active
+  .sizemeBodySizeInformationProposal {
+  transition: opacity 500ms, transform 500ms;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizeandmeChangeInformationsTransitions-enter
+  .sizeandmeChangeInformationsLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+  /* background: red; */
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizeandmeChangeInformationsTransitions-enter-active
+  .sizeandmeChangeInformationsLeft {
+  transform: translateX(100%);
+  transition: all 300ms ease;
+}
+
+/***************** ANIMATIONS    ************************/
+
+.sizemewidget .sizemeAlertDialog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 1rem 0.5rem;
+  border-radius: 20px;
+  width: 20rem;
+  height: 7rem;
+  box-shadow: 4px 5px 5px 0px #939393;
+  z-index: 99999999;
+}
+
+.sizemewidget .sizemeAlertDialog p {
+  text-align: center;
+  flex: 0.7;
+}
+
+.sizemewidget .sizemeAlertDialog-success {
+  background-color: rgb(255, 255, 255);
+  color: #785fb3;
+}
+
+.sizemewidget .sizemeAlertDialog-fail {
+  background-color: white;
+  color: #7d0000;
+}
+
+.sizemewidget .sizemeAlertDialog .sizemeAlertCloseIcon {
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.sizemewidget .sizemeAlertDialog .sizemeAlertDialogIcon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.sizemewidget .sizeMeAlertAnimation-appear,
+.sizemewidget .sizeMeAlertAnimation-enter {
+  opacity: 0;
+  transform: scale(0.9) translate(-50%, -50%);
+}
+
+.sizemewidget .sizeMeAlertAnimation-appear-active,
+.sizemewidget .sizeMeAlertAnimation-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 300ms, transform 300ms;
+}
+.sizemewidget .sizeMeAlertAnimation-exit {
+  opacity: 1;
+}
+.sizemewidget .sizeMeAlertAnimationexit-active {
+  opacity: 0;
+  transform: scale(0.4);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.sizemewidget .sizemewidget__modal__overlay {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999999;
+}
+
+.sizemewidget .sizemewidget__modal__overlay .sizeandmeLoadingAnimation {
+  width: 30rem;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 
+.sizemewidget .sizemewidget__modal__content {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  top: 12%;
+  bottom: 24%;
+  right: 25%;
+  left: 25%;
+  position: absolute;
+  z-index: 99999999;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2.5rem;
+} */
+.sizemewidget .sizemewidgetopen-appear .sizemewidget__modal__content,
+.sizemewidget .sizemewidgetopen-enter {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.sizemewidget .sizemewidgetopen-appear-active .sizemewidget__modal__content,
+.sizemewidget .sizemewidgetopen-enter-active .sizemewidget__modal__content {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.sizemewidget .sizemewidgetopen-exit .sizemewidget__modal__content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.sizemewidget .sizemewidgetopen-exit-active .sizemewidget__modal__content {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.sizemewidget .modalHeader .sizeandmePrivacyPopoverContent {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.sizemewidget .modalHeader .sizeandmePrivacyPopoverContent::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid #ffffff;
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
+}
+
+.sizemewidget .modalHeader .sizeandmePrivacyPopoverContent--4::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid #ffffff;
+  position: absolute;
+  top: -0.5rem;
+  right: 4.5rem;
+}
+
+.sizemewidget .modalWarningIcon {
+  width: 30px !important;
+  height: 30px !important;
+  cursor: pointer;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  padding: 0;
+  color: #ffc845;
+  animation: sizemeWarningAnimation 0.5s alternate infinite;
+  background: rgba(230, 203, 32, 0);
+  border-radius: 50%;
+}
+
+@keyframes sizemeWarningAnimation {
+  0% {
+    padding: 0;
+   /*  left: -10px;
+    top: -10px; */
+    background: rgba(230, 203, 32, 0);
+  }
+  100% {
+    padding: 10px;
+    /* left: -20px;
+    top: -20px; */
+    background: rgba(230, 203, 32, 0.2);
+  }
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeWarningPopoverContent {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizemeWarningPopoverContent p {
+  font-size: 0.8rem;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizeandmeButton.disable {
+  border-color: #ccc !important;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizeandmeButton-secondary {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.sizemewidget .sizemewidget__modal__content .sizeandmeButton-black {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.sizemewidget .sizemewidget__modal__content .sizeandmeButton-black.disable {
+  opacity: 0.5;
+}
+
+.sizemewidget .modalCloseIcon:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.sizemewidget .modalFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5rem;
+}
+
+.sizemewidget .modalFooter .modalFooter__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sizemewidget .modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.sizemewidget .modalFooter .sizeandmeImage {
+  width: 11rem;
+  height: auto;
+}
+
+.sizemewidget .modalFooter .nextStep {
+  display: flex;
+  gap: 0.4rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizemewidget .modalFooter .nextStep-opacityLow {
+  opacity: 0.3 !important;
+}
+
+.sizemewidget .modalFooter .sizeandmePoweredLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: fit-content;
+}
+
+.sizemewidget .modalFooter .sizeandmePoweredLogo p {
+  font-size: 0.7rem;
+
+  font-weight: 500;
+}
+
+.sizemewidget .modalFooter .nextStep .nextStepIcon,
+.sizemewidget .modalHeader .menuIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sizemewidget .modalHeader .hidePrevStepIcon {
+  visibility: hidden !important;
+}
+
+.sizemewidget .modalHeader .prevStepIcon {
+  cursor: pointer;
+}
+
+.sizemewidget .modalHeader .hideMenuIcon {
+  display: none;
+}
+
+.sizemewidget .modalHeader .menuIcon {
+  cursor: pointer;
+}
+
+.sizemewidget .modalSteps {
+  flex: 1;
+  overflow: hidden;
+}
+
+.sizemewidget .modalHeader .sizemePrivacy {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sizemewidget .modalSteps .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.sizemewidget .modalSteps .step .selectBodyTypes .selectType p {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.sizemewidget .modalSteps .step .selectBodyTypes {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.20rem;
+}
+
+.sizemewidget .modalSteps .step .selectBodyTypes-mobil {
+  display: none;
+}
+
+
+
+.sizemewidget .modalSteps .step .selectBodyTypes .selectType:hover {
+  opacity: 0.8;
+  cursor: pointer !important;
+}
+
+.sizemewidget .modalSteps .step .selectBodyTypes .selectType .bodyShape {
+  display: none;
+}
+
+.sizemewidget
+  .modalSteps
+  .step
+  .selectBodyTypes
+  .selectType
+  .bodyShape:checked
+  + img {
+  outline: 2px solid #c0c0c0;
+}
+.sizemewidget
+  .modalSteps
+  .step
+  .selectBodyTypes
+  .selectType
+  .bodyShape
+  + img:hover {
+  cursor: pointer;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalHeader .sizemeMenu {
+  position: relative;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalHeader .sizemeDropdown {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  right: -26px;
+  width: 18rem;
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+
+/* .sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown::before {
+  content: '';
+  position: absolute;
+  right: 2.65rem;
+  top: -0.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+  z-index: 9999;
+} */
+
+/* .sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  .sizemeDropdownArrowUp {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+
+  border-bottom: 0.5rem solid black;
+  right: 2.65rem;
+  top: -0.5rem;
+} */
+
+.sizemewidget .sizemewidget__modal__content .modalHeader .sizemeDropdown li {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ccc;
+  border-left: 6px solid #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li
+  .sizemeDropdownListIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li:hover {
+  border-left-color: #000000;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li:hover
+  .sizemeDropdownListIcon {
+  color: #000000;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li
+  .sizemeDropdownListText {
+  flex: 0.9;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li
+  .sizemeDropdownListText
+  p {
+  font-size: 0.8rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizemeDropdown
+  li
+  .sizemeDropdownListTitle {
+  display: flex;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizeme-dropdown-fade-enter {
+  opacity: 0;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizeme-dropdown-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizeme-dropdown-fade-exit {
+  opacity: 1;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalHeader
+  .sizeme-dropdown-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalSteps .sizemeIntroduction {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  img {
+  width: 25%;
+  height: auto;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeBodySizeInformation
+  .sizemeBodySizeProduct {
+  width: 25%;
+  height: auto;
+  min-width: 250px;
+  max-width: 250px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeBodySizeInformation
+  .sizemeBodySizeInformationProposal
+  h2 {
+  font-size: 1.4rem !important;
+  
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeBodySizeInformation
+  .sizemeBodySizeInformationProposal
+  h3 {
+  font-size: 24px !important;
+  text-align: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeBodySizeInformation
+  .sizemeBodySizeInformationProposal
+  .sizemeRegisterRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeBodySizeInformation
+  .sizemeBodySizeInformationProposal
+  .sizemeRegisterRow
+  .sizemeRegisterTextField {
+  text-align: left !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .genderChoice
+  .sizemeSelectSex {
+  display: none;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .genderChoice
+  .sizemeSelectSexTab {
+  width:4.4rem;
+  height: 1.6rem;
+  border: 0.5px solid #000;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .genderChoice
+  .sizemeSelectSex
+  .sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .genderChoice
+  label {
+  font-size: 1.3rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .sizemeRange {
+  display: flex;
+  gap: 0.5rem;
+  background: unset;
+  border-radius: unset;
+  height: unset;
+  font-size: unset;
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeIntroduction
+  .sizemeIntroductionChoices
+  .heightAndWeightChoice {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sizemewidget .sizemeLabel {
+  height: 2rem;
+  text-align: left;
+  background: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: black !important;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.sizemewidget .sizemeLabelVerticalLine {
+  width: 1px;
+  background-color: #000;
+  height: 1.8rem;
+}
+
+.sizemewidget .animatedBorderInputWrapper input::-webkit-outer-spin-button,
+.sizemewidget .animatedBorderInputWrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sizemewidget .animatedBorderInputWrapper input:focus ~ .animatedBorder {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+.sizemewidget .animatedBorderInputWrapper .animatedBorder {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: 0.5s;
+  transform: translateY(+50%);
+  padding: 0;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalSteps .ageInformation {
+  justify-content: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .ageInformation
+  .sizemeAgeTitle {
+  margin-bottom: 3rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .ageInformation
+  .sizemeAgeInput {
+  display: block;
+  width: 10rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations {
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sizemeYourProfileInformations {
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations {
+  flex: 0.5;
+  box-sizing: border-box !important;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations
+  > hr {
+  width: 100%;
+  background: #000;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations
+  .sizemeClipBoardIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations
+  .sizemeCircleUserIcon {
+  width: 3.2rem;
+  height: 3.2rem;
+  /* margin-top: 1rem; */
+  color: #ccc;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations
+  p {
+  font-size: 0.9rem;
+  /* margin-top: 1rem; */
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .yourInformationsExplanations
+  .sizemeUserShortInfo {
+  margin-top: 0;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations {
+  flex: 0.4;
+  transition: all 300ms ease;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourProfileInformations
+  .sizemeChangeProfileInformations {
+  flex: 0.5;
+  transition: all 300ms ease;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations.sizemeChangeInformations-left {
+  flex: 1 !important;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourProfileInformations
+  .sizemeChangeProfileInformations
+  .sizemeInformationsProfileRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow:not(:nth-child(1)):hover {
+  cursor: pointer;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangeAvatarIcon {
+  color: #ccc;
+  width: 10rem;
+  height: 10rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangePasswordContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .updateYourInformations
+  .sizeandmeUpdateBodyType
+  p {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangePasswordContainer
+  .sizemeChangePasswordLabel {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeAvatarEditIcon {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 50%;
+  height: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+  display: none;
+  color: #6a737b;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangeAvatarContainer:hover
+  .sizemeAvatarEditIcon {
+  display: inline-block !important;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangeAvatarContainer
+  .sizemeRoundedImage {
+  border-radius: 50%;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangeAvatarContainer:hover
+  .sizemeChangeAvatarIcon {
+  opacity: 0.5;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .updateYourInformations
+  .sizemeChangeAvatarContainer {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow
+  .sizemeInformationsKey {
+  color: #808080;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow
+  .sizemeInformationsValue {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow
+  .sizemeAvatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .sizemeChangeInformations
+  .sizemeInformationsRow
+  .sizeandmeAvatarIcon {
+  width: 2rem;
+  height: 2rem;
+  color: #ccc;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .updateYourInformations {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourProfileInformations
+  .updateYourInformations {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourInformations
+  .updateYourInformations
+  .updateYourInformationsActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeYourProfileInformations
+  .updateYourInformations
+  .updateYourInformationsActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* SWIPER */
+
+.sizemewidget
+  .sizemeSelectBodyTypeSlider
+  .changeSlideWithButtons
+  div:nth-child(2) {
+  border-left: none;
+  border-right: none;
+}
+
+.sizemewidget .sizeMeCustomSwiper {
+  width: 200px;
+  height: 200px;
+}
+
+.sizemewidget .swiper-button-prev::after,
+.sizemewidget .swiper-button-next::after {
+  font-size: 2rem !important;
+}
+
+.sizemewidget .swiper-button-prev,
+.sizemewidget .swiper-button-next {
+  color: #785fb3 !important;
+}
+
+.sizemewidget .sizemeSwiperSlide {
+  flex-shrink: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: relative !important;
+  transition-property: transform !important;
+}
+
+.sizemewidget .swiper-pagination {
+  bottom: 0px !important;
+}
+
+.sizemewidget .swiper-pagination-bullet {
+  padding: 5px 10px;
+  border-radius: 0;
+  height: 30px;
+  flex: 1 !important;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: #fff;
+  border: 1px solid #000;
+  width: 2rem;
+}
+.sizemewidget .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #785fb3;
+}
+
+/* SWIPER*/
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersTitle
+  h3,
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersTitle
+  p {
+  text-align: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersTitle
+  p {
+  font-size: 0.95rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard {
+  width: 100%;
+  padding-top: 1rem;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard {
+  width: 8rem;
+  flex-shrink: 0;
+  background: #f6f7f8;
+  cursor: pointer;
+  transition: opacity 200ms ease;
+  padding: 0.5rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard:hover {
+  opacity: 0.7;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardTop {
+  height: 8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  position: relative;
+}
+
+.sizemeUserCardTopSquare {
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardTop
+  .sizeandmeUserStatus {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #ff0000;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardTop
+  .sizeandmeUserStatus.sizeandmeUserStatus-active {
+  color: #2e8c1f;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardTop
+  .sizemeCardUserIcon {
+  width: 2.9rem;
+  height: 2.9rem;
+  color: #ccc;
+}
+
+
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardTop
+  p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeManageUsers
+  .sizemeManageUsersUserCard
+  .sizemeUserCard
+  .sizemeUserCardBottom {
+  font-size: 1rem;
+  color: #000;
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalSteps .sizemeSettings {
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeSettings
+  .sizemeSettingsIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeSettings
+  .sizemeConfigureSettings {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeSettings
+  .sizemeConfigureSettings
+  h5 {
+  margin-bottom: 1rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .sizemeSettings
+  .sizemeConfigureSettings
+  p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .forgotPassword
+  .sizeandmeForgotPasswordInputContainer {
+  width: 70%;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .forgotPassword
+  .sizeandmeForgotPasswordInputContainer
+  .sizeandmeForgotPasswordInput {
+  margin-top: 0.5rem;
+}
+
+.sizemewidget .sizemewidget__modal__content .modalSteps .login {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .login
+  .sizemeLoginInput {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.sizemewidget
+  .sizemewidget__modal__content
+  .modalSteps
+  .login
+  .sizemeLoginButton {
+  display: block;
+}
+
+@media only screen and (max-width: 1250px) {
+  .sizemewidget .modalSteps .step {
+    justify-content: space-evenly !important;
+  }
+
+  .sizemewidget .sizemewidget__modal__content {
+    top: 12%;
+    bottom: 12%;
+    right: 15%;
+    left: 15%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    img {
+    display: none;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeBodySizeInformation
+    .sizemeBodySizeProduct {
+    display: none;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeBodySizeInformation
+    .sizemeBodySizeInformationProposal {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sizemewidget .sizemewidget__modal__content {
+    right: 10%;
+    left: 10%;
+  }
+
+  .sizemewidget .modalCloseIcon {
+    padding: 0;
+    right: -15px;
+    top: -15px;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices {
+    justify-content: center;
+    padding: 0;
+    gap: 1.8rem;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices
+    .genderChoice {
+    flex: 0;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices
+    .heightAndWeightChoice {
+    flex: 0;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices
+    .sizemeFitChoice {
+    flex: 0;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices
+    .sizemeFitChoice
+    h3 {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeIntroduction
+    .sizemeIntroductionChoices
+    .sizemeFitChoice
+    .sizemeIntroductionSlider {
+    padding: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .yourInformationsExplanations {
+    display: none;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations {
+    justify-content: center !important;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations
+    .sizemeChangeInformations {
+    flex: 0.5;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations
+    .updateYourInformations-disable {
+    display: none;
+  }
+  .sizemewidget .modalSteps .step .selectBodyTypes-mobil p {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations
+    .updateYourInformations {
+    justify-content: center;
+    padding: 0 40px;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations
+    .sizemeChangeInformations-disable {
+    display: none;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeYourInformations
+    .sizemeChangeInformations-active {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sizemewidget {
+    font-size: 17px;
+  }
+
+  .sizemewidget .sizemewidget__modal__content {
+    right: 5%;
+    left: 5%;
+    top: 10%;
+    bottom: 25%;
+  }
+  /* .sizemewidget .modalSteps {
+    flex: unset;
+    padding-bottom: 4rem;
+  } */
+
+  .sizemewidget .modalFooter .sizeandmeImage {
+    width: 8rem;
+  }
+
+  .sizemewidget .modalFooter .nextStep .nextStepIcon,
+  .sizemewidget .modalHeader .menuIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .sizemewidget .modalSteps .step .selectBodyTypes {
+    display: none;
+  }
+
+  .sizemewidget .modalSteps .step .selectBodyTypes-mobil {
+    display: block;
+  }
+
+  .sizemewidget
+    .sizemewidget__modal__content
+    .modalSteps
+    .sizemeSettings
+    .sizemeConfigureSettings {
+    align-items: center;
+    text-align: center;
+  }
+  .sizemewidget .sizemewidget__modal__content .sizeandmeButton {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sizemewidget .modalFooter .sizeandmeImage {
+    width: 8rem;
+  }
+  .sizemewidget .sizemewidget__modal__content {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+#gradient-canvas {
+  height: 100vh;
+  width: 100%;
+  background: lightgrey;
+}
+
+.sizeandmemodal-enter {
+  opacity: 0.6;
+}
+.sizeandmemodal-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.sizeandmemodal-exit {
+  opacity: 1;
+}
+.sizeandmemodal-exit-active {
+  opacity: 0.6;
+
+  transition: opacity 500ms, transform 500ms;
+}
